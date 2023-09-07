@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+
+}
+h1,h1,p{
+    margin: 1.6rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 10rem 0;
+}
+/* header section */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.6)),url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    position: relative;
+}
+.logo h1{
+    font-size: 3.2rem;
+    color: #4caf50;
+    margin: 0;
+}
+nav{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+nav ul li:hover a{
+    color: #4caf50;
+    transition: .5s ease-in-out;
+}
+nav .fa-bars{
+    font-size: 30px;
+    display: none;
+}
+.header-content{
+    width: 50%;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+form{
+    margin: 2.4rem 0;
+
+}
+input{
+    font-size: 1.8rem;
+}
+input[type="text"],
+input[type="email"]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+input[type="submit"]{
+    width: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 1.8rem;
+    color: #ccc;
+}
+/* about section */
+
+.about-left,
+.about-middle,
+.about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+/* .about-left h2{
+    margin-bottom: 8rem;
+} */
+.about-left{
+    align-self: flex-start;
+    
+}
+.btn{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+
+}
+/* about 2 */
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+.about2-right{
+    flex-basis: 50%;
+}
+.about2-left{
+    flex-basis: 30%;
+}
+.about2 .card{
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+.about2-right .row i{
+    color: #4caf50;
+    font-size: 6rem;
+}
+/* process section */
+.process .row{
+    justify-content: center;
+}
+.process-content{
+    margin-top: 10rem;
+}
+.progress-bar{
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+.progress-bar .c1{
+    top:-8px;
+    left:50px;
+}
+.progress-bar .c2{
+    top:-8px;
+    left:50%;
+}
+.progress-bar .c3{
+    top:-8px;
+    right:50px;
+}
+.box1,
+.box2,
+.box3{
+    padding: 1.8rem;
+}
+.process .box2{
+    text-align: center;
+}
+.process .box1{
+    text-align: left;
+}
+.process .box3{
+    text-align: right;
+}
+.process-content h2{
+    color: #4caf50;
+}
+/* testimony */
+.testimony{
+    background-color: #222;
+    color: whitesmoke;
+}
+.testimony .test{
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+.testimony .image{
+    width: 8rem;
+    height: 8rem;
+}
+.testimony img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #ddd;
+    object-fit: cover;
+}
+.testimony i{
+    color: whitesmoke;
+}
+/* contact section */
+.contact .row{
+    justify-content: center;
+}
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact form input{
+    width: 50%;
+}
+.contact form textarea{
+    width: 50%;
+    height: 15rem;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    height: 8rem;
+    background-color: #222;
+    color: whitesmoke;
+    line-height: 8rem;
+    text-align: center;
+
+
+}
+
+footer i{
+    color: whitesmoke;
+}
+/* media queries */
+@media (max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+    .header-content{
+        width: 100%;
+        top: 16%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+    .header-content input[type="text"],
+    input[type="email"],
+    input[type="submit"]{
+        width: 80%;
+        margin: 1.2rem auto;
+
+    }
+    .progress-bar {
+        display: none;
+    }
+    .process-content{
+        margin-top: 2rem;
+    }
+    .process .box1,
+    .process .box2,
+    .process .box3{
+        text-align: center;
+    }
+    .testimony .test{
+        margin: 1.6rem 0;
+    }
+    .contact form input,
+    .contact form textarea{
+        width: 100%;
+
+    }
+
+  
+    
+    .header-content input{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    nav .fa-bars{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+    }
+    .showMenu{
+        display: block;
+    }
+    nav ul li{
+        padding: 2% 0;
+        display: block;
+
+    }
+    nav ul li a{
+        color: #222;
+    }
+
+}
